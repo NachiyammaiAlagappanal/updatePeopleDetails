@@ -1,4 +1,8 @@
 import { React } from 'react';
+
+const Options = (data) =>
+	<option value={ data }>{ data }</option>;
+
 const getGender = (context) =>
 	<label> Select Gender:{}
 		<select
@@ -7,9 +11,7 @@ const getGender = (context) =>
 			name="gender"
 			id="Gender"
 		>
-			<option value="">--Please choose an option--</option>
-			<option value="Male">Male</option>
-			<option value="Female">Female</option>
+			{	context.config.gender.map(Options) }
 		</select>
 
 	</label>;

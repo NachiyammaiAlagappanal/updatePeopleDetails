@@ -1,4 +1,5 @@
 import { React } from 'react';
+
 const getName = (context) =>
 	<label> Enter Name:{}
 		<input

@@ -1,6 +1,6 @@
 import { React } from 'react';
 import context from '../core/context';
-import element from './element.js';
+import element from './TableData.js';
 
 const tableStyle = {
 	padding: '15px',
@@ -8,8 +8,8 @@ const tableStyle = {
 	border: '2px solid black',
 	left: '600px',
 	top: '150px',
+	borderCollapse: 'collapse',
 };
-
 const DisplayList = () =>
 
 	<table style={ tableStyle }>

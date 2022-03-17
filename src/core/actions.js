@@ -1,4 +1,5 @@
 import displayManager from '../services/displayManager.js';
+
 const addName = ({ data }) => ({
 	name:	data,
 });
@@ -15,6 +16,10 @@ const getGender = ({ data }) => ({
 });
 const addButton = ({ state }) => ({
 	display: displayManager.addDetails(state),
+	name: '',
+	age: '',
+	phoneNo: '',
+	gender: '',
 });
 const actions = {
 	addName,
