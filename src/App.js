@@ -1,10 +1,10 @@
 /* eslint-disable no-console */
 import { React } from 'react';
 import './App.scss';
-import getName from './components/getName.js';
-import getAge from './components/getAge.js';
-import getPhoneNo from './components/getPhoneNo.js';
-import getGender from './components/getGender.js';
+import NameInput from './components/NameInput.js';
+import AgeInput from './components/AgeInput.js';
+import PhoneNoInput from './components/PhoneNoInput.js';
+import GenderInput from './components/GenderInput.js';
 import addButton from './components/addButton.js';
 import DisplayList from './components/displayList';
 
@@ -14,10 +14,10 @@ const App = (context) => {
 
 	return (
 		<div className="App" role="App">
-			<div>{ getName(context) }</div>
-			<div>{ getPhoneNo(context) }</div>
-			<div>{ getAge(context) }</div>
-			<div>{ getGender(context) }</div>
+			<div>ENTER NAME:{ NameInput(context) }</div>
+			<div>ENTER PHONENO: { PhoneNoInput(context) }</div>
+			<div>ENTER AGE:{ AgeInput(context) }</div>
+			<div>SELECT GENDER:{ GenderInput(context) }</div>
 			<div>{	addButton(context) }</div>
 			<div>{	DisplayList() }</div>
 		</div>

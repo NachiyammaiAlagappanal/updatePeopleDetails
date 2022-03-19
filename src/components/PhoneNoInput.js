@@ -1,12 +1,16 @@
 import { React } from 'react';
 
-const getPhoneNo = (context) =>
-	<label> Enter phoneNo:{}
+const getPhoneNo = (context) => {
+	const { state } = context;
+	const { phoneNo } = state;
+
+	return (
 		<input
 			type="number"
-			value={ context.state.phoneNo }
+			value={ phoneNo }
 			onChange={ (evt) => context.actions.addPhoneNo(evt.target.value) }
 		/>
-	</label>;
+	);
+};
 
 export default getPhoneNo;
