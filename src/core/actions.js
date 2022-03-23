@@ -14,8 +14,8 @@ const addAge = ({ data }) => ({
 const getGender = ({ data }) => ({
 	gender:	data,
 });
-const addButton = ({ state }) => ({
-	display: displayManager.addDetails(state),
+const addButton = (context) => ({
+	display: displayManager.addDetails(context),
 	name: '',
 	age: '',
 	phoneNo: '',

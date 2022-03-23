@@ -1,6 +1,11 @@
-const addDetails = (state) => {
+import { rndString } from '@laufire/utils/random';
+
+const addDetails = ({ state, config }) => {
 	const { name, age, phoneNo, gender, display } = state;
+	const id = rndString(config.idLength);
+
 	const list = {
+		id,
 		name,
 		age,
 		phoneNo,

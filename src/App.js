@@ -19,7 +19,7 @@ const App = (context) => {
 			<div>ENTER AGE:{ AgeInput(context) }</div>
 			<div>SELECT GENDER:{ GenderInput(context) }</div>
 			<div>{	addButton(context) }</div>
-			<div>{	DisplayList() }</div>
+			<div>{	DisplayList(context) }</div>
 		</div>
 	);
 };
